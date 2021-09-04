@@ -1,0 +1,198 @@
+:root {
+    --tamnoPlava: #140035;
+    --svetloPlava: #39a1ff;
+    --bela: #fff;
+    --svetloSiva: #f7f7f7;
+    --font: 16px;
+    --transition: .4s ease;
+    --padding: 100px 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--tamnoPlava);
+    color: var(--bela);
+}
+
+
+
+
+/* HEADER */
+
+header {
+    background-image: url(img/header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110vh;
+    padding: 20%;
+}
+
+header .button {
+    padding: 10px 20px;
+    border: none;
+    background: var(--tamnoPlava);
+    color: var(--bela);
+}
+
+header .button:hover {
+    padding: 10px 20px;
+    border: none;
+    background: var(--bela);
+    color: var(--tamnoPlava);
+    transition: var(--transition);
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--tamnoPlava);
+}
+
+header p {
+    color: var(--bela);
+}
+/* END OF HEADER */
+
+
+/* WHY US */
+
+.whyUs {
+    padding: var(--padding);
+}
+
+.whyUs .col-md-6:first-child {
+    padding: 30px;
+}
+
+.whyUs .whyUs-tittle {
+    padding: 30px;
+    background: var(--svetloPlava);
+}
+
+.whyUs .button:hover {
+    padding: 10px 20px;
+    border: none;
+    background: var(--bela);
+    color: var(--tamnoPlava);
+    transition: var(--transition);
+}
+/* END OF WHY US */
+
+
+/* SIDEBAR */
+
+.sidebar {
+    padding: var(--padding);
+}
+
+/* END OF SIDEBAR */
+
+/* RECENT PROJECT */
+.recentProjects {
+    padding: var(--padding);
+}
+
+.recentProjects h1 {
+    color: var(--tamnoPlava);
+}
+
+.recentProjects .button:hover {
+    padding: 10px 20px;
+    border: none;
+    background: var(--bela);
+    color: var(--tamnoPlava);
+    transition: var(--transition);
+}
+
+/* END OF RECENT PROJECT */
+
+
+/* CONTACT US */
+.contactUs {
+    padding: var(--padding);
+    background: var(--svetloPlava);
+    color: var(--bela);
+}
+/* END OF CONTACT US */
+
+
+/* FOOTER */
+footer {
+    padding: 30px;
+    background-color: var(--tamnoPlava);
+    color: var(--bela);
+}
+
+footer h4 {
+    font-weight: 500;
+}
+/* END OF FOOTER */
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:768px) {
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    header h1 {
+        font-size: 3rem;
+    }
+
+    .sidebar img {
+        margin-top: 30px;
+    }
+    .sidebar h2 {
+        margin-top: 30px;
+    }
+    .recentProjects img {
+        margin-top: 30px;
+    }
+
+    .recentProjects h1 {
+        font-size: 2rem;
+    }
+
+    .recentProjects p {
+        font-size: .9rem;
+    }
+    
+    footer h4 {
+        font-size: 1.2rem;
+    }
+
+    .contactUs h3{
+        font-size: 1.5rem;
+    }
+
+    .contactUs h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* END OF RESPONSIVE DESIGN */
+
+
